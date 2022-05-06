@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="tools/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background: #0415af;
+            background-image: linear-gradient(to right, rgb(231, 102, 3), rgba(207, 207, 20, 0.8));
+        }
+
+        .bg {
+            background-image: url(tools/img/imganes/peluqueria3.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+
+<body>
+    <div class="container w-75 bg-info mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+
+            </div>
+            <div class="col bg-white ">
+                <div class="text-end">
+                    <img src="tools/img/logo/evolutionNLM.jpg" width="40" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenidos</h2>
+
+                <!-- login -->
+
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+
+                    <!-- contraseña input -->
+                    <div class="form-group form-outline mb-4">
+                        <label class="form-label" for="txtPassword" style="margin-left: 0px;">password</label>
+                        <div class="input-group">
+                            <input ID="txtPassword" type="Password" Class="form-control">
+                            <div class="input-group-append">
+                                <button id="show_password" class="btn btn-primary" type="button"
+                                    onclick="mostrarPassword()">
+                                    <span class="fa fa-eye-slash icon"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input" id="con">
+                        <label for="connected" class="form-check-label">Mantenerme Conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>No tines cuenta? <a href="#">Registrarse</a></span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="tools/js/bootstrap.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function mostrarPassword() {
+            var cambio = document.getElementById("txtPassword");
+            if (cambio.type == "password") {
+                cambio.type = "text";
+                $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+            } else {
+                cambio.type = "password";
+                $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+            }
+        }
+
+        $(document).ready(function () {
+            //CheckBox mostrar contraseña
+            $('#ShowPassword').click(function () {
+                $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+            });
+        });
+    </script>
+</body>
+
+</html>

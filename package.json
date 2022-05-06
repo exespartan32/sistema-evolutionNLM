@@ -1,0 +1,13 @@
+{
+    "name": "aplicacion EvolutionNLM",
+    "version": "1.0.0",
+    "description": "aplicacion de gestion de pago y deudas de instituto evolutionNLM",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.1"
+    },
+    "author": "exequiel",
+    "license": "ISC"
+}
