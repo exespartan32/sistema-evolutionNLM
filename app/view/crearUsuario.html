@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>home evolution NLM</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/animacion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../public/img/logo/evolutionNLM.jpg" width="70" height="50"
+          class="rounded-circle" alt="Cinque Terre">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+        aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse me-auto" id="navbarsExample07">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+              aria-expanded="false">Pagos</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+              <li><a class="dropdown-item" href="#">Agregar pago</a></li>
+              <li><a class="dropdown-item" href="#">Editar pago</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar pago</a></li>
+              <li><a class="dropdown-item" href="#">Ver pagos efectuados por un alumno</a></li>
+              <li><a class="dropdown-item" href="#">Buscar tikets de pago</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown ms-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+              aria-expanded="false">Deudas</a>
+            <ul class="dropdown-menu " aria-labelledby="dropdown07">
+              <li><a class="dropdown-item" href="#">Agregar deuda</a></li>
+              <li><a class="dropdown-item" href="#">Editar estado deuda</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar Deuda</a></li>
+              <li><a class="dropdown-item" href="#">Ver deuda de alumno</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg_animate">
+    <section class="banner contenedor">
+      <secrion class="banner_title">
+        <h2>crear usuario</h2>
+        <form action="#">
+          <!-- email imput -->
+          <div class="mb-4">
+            <label for="email" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+
+          <!-- contraseña input -->
+          <div class="form-group form-outline mb-4">
+            <label class="form-label" for="txtPassword" style="margin-left: 0px;">password</label>
+            <div class="input-group">
+              <input ID="txtPassword" type="Password" Class="form-control">
+              <div class="input-group-append">
+                <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()">
+                  <span class="fa fa-eye-slash icon"></span></button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-lg btn-block">enviar informacion</button>
+        </form>
+        </div>
+      </secrion>
+      <div class="banner_img">
+        <img src="../public/img/imganes/img.png" alt="">
+      </div>
+    </section>
+
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
+  </header>
+  <script src="../public/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
