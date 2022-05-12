@@ -1,0 +1,31 @@
+<form action="#">
+    <div class="mb-4">
+        <label for="email" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+
+    <!-- contraseña input -->
+    <div class="form-group form-outline mb-4">
+        <label class="form-label" for="txtPassword" style="margin-left: 0px;">password</label>
+        <div class="input-group">
+            <input ID="txtPassword" type="Password" Class="form-control">
+            <div class="input-group-append">
+                <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()">
+                    <span class="fa fa-eye-slash icon"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4 form-check">
+        <input type="checkbox" name="connected" class="form-check-input" id="con">
+        <label for="connected" class="form-check-label">Mantenerme Conectado</label>
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    </div>
+
+    <div class="my-3">
+        <span>No tines cuenta? <a href="#">Registrarse</a></span>
+    </div>
+
+</form>

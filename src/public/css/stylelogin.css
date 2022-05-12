@@ -1,0 +1,10 @@
+body {
+    background: #0415af;
+    background-image: linear-gradient(to right, rgb(231, 102, 3), rgba(207, 207, 20, 0.8));
+}
+
+.bg {
+    background-image: url(../public/img/imganes/peluqueria3.jpg);
+    background-position: center center;
+    background-size: cover;
+}

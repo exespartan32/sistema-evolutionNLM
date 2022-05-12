@@ -1,0 +1,20 @@
+<h2>crear usuario</h2>
+<form action="#">
+  <!-- email imput -->
+  <div class="mb-4">
+    <label for="email" class="form-label">Correo Electronico</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+
+  <div class="form-group form-outline mb-4">
+    <label class="form-label" for="txtPassword" style="margin-left: 0px;">password</label>
+    <div class="input-group">
+      <input ID="txtPassword" type="Password" Class="form-control">
+      <div class="input-group-append">
+        <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()">
+          <span class="fa fa-eye-slash icon"></span></button>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success btn-lg btn-block">enviar informacion</button>
+</form>
