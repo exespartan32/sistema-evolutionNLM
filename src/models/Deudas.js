@@ -7,7 +7,11 @@ const deudaSchema = new mongoose.Schema({
         unique: true,
         required: true
     },
-    alumno: {
+    nombreAlumno: {
+        type: String,
+        required: true
+    },
+    apellidoAlumno:{
         type: String,
         required: true
     },

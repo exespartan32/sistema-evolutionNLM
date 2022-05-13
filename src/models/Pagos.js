@@ -7,12 +7,20 @@ const pagoSchema = new mongoose.Schema({
         unique: true,
         required: true
     },
-    alumno: {
+    nombreAlumno: {
+        type: String,
+        required: true
+    },
+    apellidoAlumno:{
         type: String,
         required: true
     },
     pago: {
         type: Number,
+        required: true
+    },
+    pagoMes: {
+        type: String,
         required: true
     },
     fechaCreacion: {
