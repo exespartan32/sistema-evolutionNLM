@@ -4,7 +4,7 @@
   "description": "aplicacion de gestion de pago y deudas de instituto evolutionNLM",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/exespartan32/sistema-evolutionNLM/issues"
   },
-  
   "homepage": "https://github.com/exespartan32/sistema-evolutionNLM#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
