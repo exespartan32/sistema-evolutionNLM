@@ -1,12 +1,12 @@
-const { default: mongoose } = require('mongoose');
+//const { default: mongoose } = require('mongoose');
 const mongoose = require('mongoose');
 
 const pagoSchema = new mongoose.Schema({
-    tiket: {
+    /*tiket: {
         type: String,
         unique: true,
         required: true
-    },
+    },*/
     nombreAlumno: {
         type: String,
         required: true
@@ -15,7 +15,7 @@ const pagoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    pago: {
+    pagoMonto: {
         type: Number,
         required: true
     },
@@ -35,10 +35,10 @@ const pagoSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
-    usuario:{
+    /*usuario:{
         type: String,
         unique: true,
-    },
+    },*/
 })
 
 const pago = mongoose.model('Pago', pagoSchema)
