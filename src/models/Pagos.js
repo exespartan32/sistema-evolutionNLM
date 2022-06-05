@@ -1,12 +1,7 @@
-const { default: mongoose } = require('mongoose');
-const mongoose = require('mongoose');
+const moongose = require('mongoose');
+const {Schema} = moongose
 
-const pagoSchema = new mongoose.Schema({
-    tiket: {
-        type: String,
-        unique: true,
-        required: true
-    },
+const pagoSchema = new Schema({
     nombreAlumno: {
         type: String,
         required: true
@@ -15,7 +10,7 @@ const pagoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    pago: {
+    pagoAlumno: {
         type: Number,
         required: true
     },
@@ -27,19 +22,6 @@ const pagoSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
-    fechaModificacion: {
-        type: Date,
-        default: Date.now()
-    },
-    FechaEliminacion: {
-        type: Date,
-        default: Date.now()
-    },
-    usuario:{
-        type: String,
-        unique: true,
-    },
 })
 
-const pago = mongoose.model('Pago', pagoSchema)
-module.exports = pago;
+module.exports = moongose.model('Pagos', pagoSchema)

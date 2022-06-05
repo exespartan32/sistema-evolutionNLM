@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/animacion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Sixth navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="/img/logo/evolutionNLM.jpg" width="70" height="50"
-                    class="rounded-circle" alt="Cinque Terre">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
-                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="/img/logo/evolutionNLM.jpg" width="70" height="50" class="rounded-circle" alt="Cinque Terre">
+            <ul class="navbar-nav ml-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+                aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
 
-            <div class="collapse navbar-collapse me-auto" id="navbarsExample07">
+            <div class="collapse navbar-collapse mx-auto" id="navbarsExample06">
+
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <!-- pagos -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
                             aria-expanded="false">Pagos</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                        <ul class="dropdown-menu" aria-labelledby="dropdown06">
                             <li><a class="dropdown-item" href="/pagos/ingresarPago">Agregar pago</a></li>
                             <li><a class="dropdown-item" href="/pagos/editarPago">Editar pago</a></li>
                             <li><a class="dropdown-item" href="/pagos/borrarPago">Eliminar pago</a></li>
@@ -38,10 +46,11 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown ms-auto">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                    <!-- deudas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
                             aria-expanded="false">Deudas</a>
-                        <ul class="dropdown-menu " aria-labelledby="dropdown07">
+                        <ul class="dropdown-menu" aria-labelledby="dropdown06">
                             <li><a class="dropdown-item" href="/deuda/ingresarDeuda">Agregar deuda</a></li>
                             <li><a class="dropdown-item" href="/deuda/editarDeuda">Editar estado deuda</a></li>
                             <li><a class="dropdown-item" href="/deuda/eliminarDeuda">Eliminar Deuda</a></li>
@@ -50,12 +59,15 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-            <a class="navbar-brand btn btn-primary mr-5" href="/">login1</a>
-            <a class="navbar-brand btn btn-primary " href="/">login2</a>
 
+                <a href="" class="btn btn-outline-info  mx-1" disabled >Crear Usuario <i class="fa fa-user-plus"></i></a>
+                <a href="" class="btn btn-outline-success active mx-1">Iniciar Sesion <i class="fa fa-expeditedssl"></i></a>
+            </div>
         </div>
     </nav>
+
+
+
 
     <header class="bg_animate">
         {{{ body }}}

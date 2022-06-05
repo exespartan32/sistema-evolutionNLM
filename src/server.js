@@ -55,6 +55,10 @@ app.engine(
   ".hbs",
   exphbs.engine({
     defaultLayout: "main",
+    runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+      allowProtoMethodsByDefault: true,
+    },
     layoutsDir: path.join(app.get("views"), "layouts"),
     partialsDir: path.join(app.get("views"), "partials"),
     extname: ".hbs",
